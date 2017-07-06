@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF14C2381F04F9460055F239 /* NEPVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF14C2371F04F9460055F239 /* NEPVideoPlayerViewController.m */; };
+		DF6C22BB1F00EAD9003250E5 /* NEPVideoLiveView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C227A1F00EAD9003250E5 /* NEPVideoLiveView+Event.m */; };
+		DF6C22BC1F00EAD9003250E5 /* NEPVideoLiveView+Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C227C1F00EAD9003250E5 /* NEPVideoLiveView+Observer.m */; };
+		DF6C22BD1F00EAD9003250E5 /* NEPVideoShortView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C227E1F00EAD9003250E5 /* NEPVideoShortView+Event.m */; };
+		DF6C22BE1F00EAD9003250E5 /* NEPVideoShortView+Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22801F00EAD9003250E5 /* NEPVideoShortView+Observer.m */; };
+		DF6C22BF1F00EAD9003250E5 /* NEPVideoSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22851F00EAD9003250E5 /* NEPVideoSessionManager.m */; };
+		DF6C22C01F00EAD9003250E5 /* NEPVideoLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22891F00EAD9003250E5 /* NEPVideoLiveView.m */; };
+		DF6C22C21F00EAD9003250E5 /* NEPVideoShortView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C228D1F00EAD9003250E5 /* NEPVideoShortView.m */; };
+		DF6C22C31F00EAD9003250E5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22951F00EAD9003250E5 /* libcrypto.a */; };
+		DF6C22C41F00EAD9003250E5 /* libNELivePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22961F00EAD9003250E5 /* libNELivePlayer.a */; };
+		DF6C22C51F00EAD9003250E5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22971F00EAD9003250E5 /* libssl.a */; };
+		DF6C22C61F00EAD9003250E5 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C229A1F00EAD9003250E5 /* MASCompositeConstraint.m */; };
+		DF6C22C71F00EAD9003250E5 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C229D1F00EAD9003250E5 /* MASConstraint.m */; };
+		DF6C22C81F00EAD9003250E5 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C229F1F00EAD9003250E5 /* MASConstraintMaker.m */; };
+		DF6C22C91F00EAD9003250E5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22A11F00EAD9003250E5 /* MASLayoutConstraint.m */; };
+		DF6C22CA1F00EAD9003250E5 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22A51F00EAD9003250E5 /* MASViewAttribute.m */; };
+		DF6C22CB1F00EAD9003250E5 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22A71F00EAD9003250E5 /* MASViewConstraint.m */; };
+		DF6C22CC1F00EAD9003250E5 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22A91F00EAD9003250E5 /* NSArray+MASAdditions.m */; };
+		DF6C22CD1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22AC1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		DF6C22CE1F00EAD9003250E5 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22AE1F00EAD9003250E5 /* View+MASAdditions.m */; };
+		DF6C22CF1F00EAD9003250E5 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22B11F00EAD9003250E5 /* ViewController+MASAdditions.m */; };
+		DF6C22D01F00EAD9003250E5 /* NEPVideoAgainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22B41F00EAD9003250E5 /* NEPVideoAgainView.m */; };
+		DF6C22D11F00EAD9003250E5 /* NEPVideoBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22B61F00EAD9003250E5 /* NEPVideoBottomBar.m */; };
+		DF6C22D21F00EAD9003250E5 /* NEPVideoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22B81F00EAD9003250E5 /* NEPVideoTool.m */; };
+		DF6C22D31F00EAD9003250E5 /* NEPVideoTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22BA1F00EAD9003250E5 /* NEPVideoTopBar.m */; };
+		DF6C22D61F00ED78003250E5 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22D51F00ED78003250E5 /* libbz2.tbd */; };
+		DF6C22D81F00ED80003250E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22D71F00ED80003250E5 /* libz.tbd */; };
+		DF6C22DA1F00ED8D003250E5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22D91F00ED8D003250E5 /* libstdc++.tbd */; };
+		DF6C22DC1F00ED96003250E5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22DB1F00ED96003250E5 /* libiconv.tbd */; };
+		DF6C22DE1F00ED9C003250E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22DD1F00ED9C003250E5 /* SystemConfiguration.framework */; };
+		DF6C22E01F00EDA5003250E5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22DF1F00EDA5003250E5 /* CoreTelephony.framework */; };
+		DF6C22E21F00EDAD003250E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22E11F00EDAD003250E5 /* CFNetwork.framework */; };
+		DF6C22E41F00EDB5003250E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22E31F00EDB5003250E5 /* Foundation.framework */; };
+		DF6C22E61F00EDBD003250E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22E51F00EDBD003250E5 /* OpenGLES.framework */; };
+		DF6C22E81F00EDC6003250E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22E71F00EDC6003250E5 /* QuartzCore.framework */; };
+		DF6C22EA1F00EDCE003250E5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22E91F00EDCE003250E5 /* CoreAudio.framework */; };
+		DF6C22EC1F00EDD5003250E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22EB1F00EDD5003250E5 /* CoreGraphics.framework */; };
+		DF6C22EE1F00EDDF003250E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22ED1F00EDDF003250E5 /* CoreMedia.framework */; };
+		DF6C22F01F00EDE7003250E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22EF1F00EDE7003250E5 /* AVFoundation.framework */; };
+		DF6C22F21F00EDF1003250E5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22F11F00EDF1003250E5 /* CoreVideo.framework */; };
+		DF6C22F41F00EDF9003250E5 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22F31F00EDF9003250E5 /* VideoToolbox.framework */; };
+		DF6C22F61F00EDFF003250E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22F51F00EDFF003250E5 /* AudioToolbox.framework */; };
+		DF6C22F81F00EE04003250E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C22F71F00EE04003250E5 /* UIKit.framework */; };
+		DF6C22FB1F00F9B0003250E5 /* NEPVideoProgreeTip.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C22FA1F00F9B0003250E5 /* NEPVideoProgreeTip.m */; };
+		DF6C22FF1F00FB2D003250E5 /* NEPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF6C22FE1F00FB2D003250E5 /* NEPVideoPlayer.bundle */; };
+		DF6C23021F00FE39003250E5 /* NEPVideoBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C23011F00FE39003250E5 /* NEPVideoBrightnessView.m */; };
+		DF6C23231F024970003250E5 /* NEPVideoPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6C23221F024970003250E5 /* NEPVideoPlayerModel.m */; };
+		DFFD37931EEA8F80000EEA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD37921EEA8F80000EEA14 /* main.m */; };
+		DFFD37961EEA8F80000EEA14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD37951EEA8F80000EEA14 /* AppDelegate.m */; };
+		DFFD37991EEA8F80000EEA14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD37981EEA8F80000EEA14 /* ViewController.m */; };
+		DFFD379C1EEA8F80000EEA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFD379A1EEA8F80000EEA14 /* Main.storyboard */; };
+		DFFD379E1EEA8F80000EEA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFD379D1EEA8F80000EEA14 /* Assets.xcassets */; };
+		DFFD37A11EEA8F80000EEA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFD379F1EEA8F80000EEA14 /* LaunchScreen.storyboard */; };
+		DFFD37AC1EEA8F80000EEA14 /* NETPlayerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD37AB1EEA8F80000EEA14 /* NETPlayerViewTests.m */; };
+		DFFD37B71EEA8F80000EEA14 /* NETPlayerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD37B61EEA8F80000EEA14 /* NETPlayerViewUITests.m */; };
+		DFFECF631F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFECF621F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFFD37A81EEA8F80000EEA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFD37861EEA8F80000EEA14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFD378D1EEA8F80000EEA14;
+			remoteInfo = NETPlayerView;
+		};
+		DFFD37B31EEA8F80000EEA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFD37861EEA8F80000EEA14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFD378D1EEA8F80000EEA14;
+			remoteInfo = NETPlayerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF14C2361F04F9460055F239 /* NEPVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoPlayerViewController.h; sourceTree = "<group>"; };
+		DF14C2371F04F9460055F239 /* NEPVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoPlayerViewController.m; sourceTree = "<group>"; };
+		DF6C22791F00EAD9003250E5 /* NEPVideoLiveView+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEPVideoLiveView+Event.h"; sourceTree = "<group>"; };
+		DF6C227A1F00EAD9003250E5 /* NEPVideoLiveView+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NEPVideoLiveView+Event.m"; sourceTree = "<group>"; };
+		DF6C227B1F00EAD9003250E5 /* NEPVideoLiveView+Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEPVideoLiveView+Observer.h"; sourceTree = "<group>"; };
+		DF6C227C1F00EAD9003250E5 /* NEPVideoLiveView+Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NEPVideoLiveView+Observer.m"; sourceTree = "<group>"; };
+		DF6C227D1F00EAD9003250E5 /* NEPVideoShortView+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEPVideoShortView+Event.h"; sourceTree = "<group>"; };
+		DF6C227E1F00EAD9003250E5 /* NEPVideoShortView+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NEPVideoShortView+Event.m"; sourceTree = "<group>"; };
+		DF6C227F1F00EAD9003250E5 /* NEPVideoShortView+Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEPVideoShortView+Observer.h"; sourceTree = "<group>"; };
+		DF6C22801F00EAD9003250E5 /* NEPVideoShortView+Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NEPVideoShortView+Observer.m"; sourceTree = "<group>"; };
+		DF6C22831F00EAD9003250E5 /* NEPVideoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoProtocol.h; sourceTree = "<group>"; };
+		DF6C22841F00EAD9003250E5 /* NEPVideoSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoSessionManager.h; sourceTree = "<group>"; };
+		DF6C22851F00EAD9003250E5 /* NEPVideoSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoSessionManager.m; sourceTree = "<group>"; };
+		DF6C22861F00EAD9003250E5 /* NEPWQDL.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPWQDL.pch; sourceTree = "<group>"; };
+		DF6C22881F00EAD9003250E5 /* NEPVideoLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoLiveView.h; sourceTree = "<group>"; };
+		DF6C22891F00EAD9003250E5 /* NEPVideoLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoLiveView.m; sourceTree = "<group>"; };
+		DF6C228C1F00EAD9003250E5 /* NEPVideoShortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoShortView.h; sourceTree = "<group>"; };
+		DF6C228D1F00EAD9003250E5 /* NEPVideoShortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoShortView.m; sourceTree = "<group>"; };
+		DF6C22921F00EAD9003250E5 /* NELivePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELivePlayer.h; sourceTree = "<group>"; };
+		DF6C22931F00EAD9003250E5 /* NELivePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELivePlayerController.h; sourceTree = "<group>"; };
+		DF6C22951F00EAD9003250E5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		DF6C22961F00EAD9003250E5 /* libNELivePlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNELivePlayer.a; sourceTree = "<group>"; };
+		DF6C22971F00EAD9003250E5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		DF6C22991F00EAD9003250E5 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		DF6C229A1F00EAD9003250E5 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		DF6C229B1F00EAD9003250E5 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		DF6C229C1F00EAD9003250E5 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		DF6C229D1F00EAD9003250E5 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		DF6C229E1F00EAD9003250E5 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		DF6C229F1F00EAD9003250E5 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		DF6C22A01F00EAD9003250E5 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DF6C22A11F00EAD9003250E5 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		DF6C22A21F00EAD9003250E5 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		DF6C22A31F00EAD9003250E5 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		DF6C22A41F00EAD9003250E5 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		DF6C22A51F00EAD9003250E5 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		DF6C22A61F00EAD9003250E5 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		DF6C22A71F00EAD9003250E5 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		DF6C22A81F00EAD9003250E5 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		DF6C22A91F00EAD9003250E5 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		DF6C22AA1F00EAD9003250E5 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DF6C22AB1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		DF6C22AC1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		DF6C22AD1F00EAD9003250E5 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		DF6C22AE1F00EAD9003250E5 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		DF6C22AF1F00EAD9003250E5 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DF6C22B01F00EAD9003250E5 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		DF6C22B11F00EAD9003250E5 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		DF6C22B31F00EAD9003250E5 /* NEPVideoAgainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoAgainView.h; sourceTree = "<group>"; };
+		DF6C22B41F00EAD9003250E5 /* NEPVideoAgainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoAgainView.m; sourceTree = "<group>"; };
+		DF6C22B51F00EAD9003250E5 /* NEPVideoBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoBottomBar.h; sourceTree = "<group>"; };
+		DF6C22B61F00EAD9003250E5 /* NEPVideoBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoBottomBar.m; sourceTree = "<group>"; };
+		DF6C22B71F00EAD9003250E5 /* NEPVideoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoTool.h; sourceTree = "<group>"; };
+		DF6C22B81F00EAD9003250E5 /* NEPVideoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoTool.m; sourceTree = "<group>"; };
+		DF6C22B91F00EAD9003250E5 /* NEPVideoTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoTopBar.h; sourceTree = "<group>"; };
+		DF6C22BA1F00EAD9003250E5 /* NEPVideoTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoTopBar.m; sourceTree = "<group>"; };
+		DF6C22D51F00ED78003250E5 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		DF6C22D71F00ED80003250E5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DF6C22D91F00ED8D003250E5 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		DF6C22DB1F00ED96003250E5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		DF6C22DD1F00ED9C003250E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF6C22DF1F00EDA5003250E5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DF6C22E11F00EDAD003250E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DF6C22E31F00EDB5003250E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF6C22E51F00EDBD003250E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DF6C22E71F00EDC6003250E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF6C22E91F00EDCE003250E5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		DF6C22EB1F00EDD5003250E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF6C22ED1F00EDDF003250E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DF6C22EF1F00EDE7003250E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DF6C22F11F00EDF1003250E5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DF6C22F31F00EDF9003250E5 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		DF6C22F51F00EDFF003250E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DF6C22F71F00EE04003250E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF6C22F91F00F9B0003250E5 /* NEPVideoProgreeTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoProgreeTip.h; sourceTree = "<group>"; };
+		DF6C22FA1F00F9B0003250E5 /* NEPVideoProgreeTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoProgreeTip.m; sourceTree = "<group>"; };
+		DF6C22FE1F00FB2D003250E5 /* NEPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NEPVideoPlayer.bundle; sourceTree = "<group>"; };
+		DF6C23001F00FE39003250E5 /* NEPVideoBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoBrightnessView.h; sourceTree = "<group>"; };
+		DF6C23011F00FE39003250E5 /* NEPVideoBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoBrightnessView.m; sourceTree = "<group>"; };
+		DF6C23211F024970003250E5 /* NEPVideoPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEPVideoPlayerModel.h; sourceTree = "<group>"; };
+		DF6C23221F024970003250E5 /* NEPVideoPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEPVideoPlayerModel.m; sourceTree = "<group>"; };
+		DFFD378E1EEA8F80000EEA14 /* NETPlayerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETPlayerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFD37921EEA8F80000EEA14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFFD37941EEA8F80000EEA14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFFD37951EEA8F80000EEA14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFFD37971EEA8F80000EEA14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DFFD37981EEA8F80000EEA14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DFFD379B1EEA8F80000EEA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFFD379D1EEA8F80000EEA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFFD37A01EEA8F80000EEA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFFD37A21EEA8F80000EEA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFD37A71EEA8F80000EEA14 /* NETPlayerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NETPlayerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFD37AB1EEA8F80000EEA14 /* NETPlayerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETPlayerViewTests.m; sourceTree = "<group>"; };
+		DFFD37AD1EEA8F80000EEA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFD37B21EEA8F80000EEA14 /* NETPlayerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NETPlayerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFD37B61EEA8F80000EEA14 /* NETPlayerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETPlayerViewUITests.m; sourceTree = "<group>"; };
+		DFFD37B81EEA8F80000EEA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFECF611F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+NEPVideoSwizzling.h"; sourceTree = "<group>"; };
+		DFFECF621F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+NEPVideoSwizzling.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFD378B1EEA8F80000EEA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6C22F81F00EE04003250E5 /* UIKit.framework in Frameworks */,
+				DF6C22F61F00EDFF003250E5 /* AudioToolbox.framework in Frameworks */,
+				DF6C22F41F00EDF9003250E5 /* VideoToolbox.framework in Frameworks */,
+				DF6C22F21F00EDF1003250E5 /* CoreVideo.framework in Frameworks */,
+				DF6C22F01F00EDE7003250E5 /* AVFoundation.framework in Frameworks */,
+				DF6C22EE1F00EDDF003250E5 /* CoreMedia.framework in Frameworks */,
+				DF6C22EC1F00EDD5003250E5 /* CoreGraphics.framework in Frameworks */,
+				DF6C22EA1F00EDCE003250E5 /* CoreAudio.framework in Frameworks */,
+				DF6C22E81F00EDC6003250E5 /* QuartzCore.framework in Frameworks */,
+				DF6C22E61F00EDBD003250E5 /* OpenGLES.framework in Frameworks */,
+				DF6C22E41F00EDB5003250E5 /* Foundation.framework in Frameworks */,
+				DF6C22E21F00EDAD003250E5 /* CFNetwork.framework in Frameworks */,
+				DF6C22E01F00EDA5003250E5 /* CoreTelephony.framework in Frameworks */,
+				DF6C22DE1F00ED9C003250E5 /* SystemConfiguration.framework in Frameworks */,
+				DF6C22DC1F00ED96003250E5 /* libiconv.tbd in Frameworks */,
+				DF6C22DA1F00ED8D003250E5 /* libstdc++.tbd in Frameworks */,
+				DF6C22D81F00ED80003250E5 /* libz.tbd in Frameworks */,
+				DF6C22D61F00ED78003250E5 /* libbz2.tbd in Frameworks */,
+				DF6C22C31F00EAD9003250E5 /* libcrypto.a in Frameworks */,
+				DF6C22C41F00EAD9003250E5 /* libNELivePlayer.a in Frameworks */,
+				DF6C22C51F00EAD9003250E5 /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37A41EEA8F80000EEA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37AF1EEA8F80000EEA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF6C22771F00EAD9003250E5 /* NEPWQDLPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22FE1F00FB2D003250E5 /* NEPVideoPlayer.bundle */,
+				DF6C22781F00EAD9003250E5 /* Category */,
+				DF6C22821F00EAD9003250E5 /* model */,
+				DF6C22861F00EAD9003250E5 /* NEPWQDL.pch */,
+				DF6C22871F00EAD9003250E5 /* Player */,
+				DF6C228E1F00EAD9003250E5 /* SDK */,
+				DF6C22B21F00EAD9003250E5 /* View */,
+			);
+			path = NEPWQDLPlayView;
+			sourceTree = "<group>";
+		};
+		DF6C22781F00EAD9003250E5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22791F00EAD9003250E5 /* NEPVideoLiveView+Event.h */,
+				DF6C227A1F00EAD9003250E5 /* NEPVideoLiveView+Event.m */,
+				DF6C227B1F00EAD9003250E5 /* NEPVideoLiveView+Observer.h */,
+				DF6C227C1F00EAD9003250E5 /* NEPVideoLiveView+Observer.m */,
+				DF6C227D1F00EAD9003250E5 /* NEPVideoShortView+Event.h */,
+				DF6C227E1F00EAD9003250E5 /* NEPVideoShortView+Event.m */,
+				DF6C227F1F00EAD9003250E5 /* NEPVideoShortView+Observer.h */,
+				DF6C22801F00EAD9003250E5 /* NEPVideoShortView+Observer.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DF6C22821F00EAD9003250E5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22831F00EAD9003250E5 /* NEPVideoProtocol.h */,
+				DF6C22841F00EAD9003250E5 /* NEPVideoSessionManager.h */,
+				DF6C22851F00EAD9003250E5 /* NEPVideoSessionManager.m */,
+				DF6C23211F024970003250E5 /* NEPVideoPlayerModel.h */,
+				DF6C23221F024970003250E5 /* NEPVideoPlayerModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DF6C22871F00EAD9003250E5 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22881F00EAD9003250E5 /* NEPVideoLiveView.h */,
+				DF6C22891F00EAD9003250E5 /* NEPVideoLiveView.m */,
+				DF6C228C1F00EAD9003250E5 /* NEPVideoShortView.h */,
+				DF6C228D1F00EAD9003250E5 /* NEPVideoShortView.m */,
+				DF14C2361F04F9460055F239 /* NEPVideoPlayerViewController.h */,
+				DF14C2371F04F9460055F239 /* NEPVideoPlayerViewController.m */,
+				DFFECF611F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.h */,
+				DFFECF621F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		DF6C228E1F00EAD9003250E5 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C228F1F00EAD9003250E5 /* LivePlayerSDK */,
+				DF6C22981F00EAD9003250E5 /* Masonry */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		DF6C228F1F00EAD9003250E5 /* LivePlayerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22901F00EAD9003250E5 /* include */,
+				DF6C22941F00EAD9003250E5 /* libs */,
+			);
+			path = LivePlayerSDK;
+			sourceTree = "<group>";
+		};
+		DF6C22901F00EAD9003250E5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22911F00EAD9003250E5 /* NELivePlayer */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DF6C22911F00EAD9003250E5 /* NELivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22921F00EAD9003250E5 /* NELivePlayer.h */,
+				DF6C22931F00EAD9003250E5 /* NELivePlayerController.h */,
+			);
+			path = NELivePlayer;
+			sourceTree = "<group>";
+		};
+		DF6C22941F00EAD9003250E5 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22951F00EAD9003250E5 /* libcrypto.a */,
+				DF6C22961F00EAD9003250E5 /* libNELivePlayer.a */,
+				DF6C22971F00EAD9003250E5 /* libssl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		DF6C22981F00EAD9003250E5 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22991F00EAD9003250E5 /* MASCompositeConstraint.h */,
+				DF6C229A1F00EAD9003250E5 /* MASCompositeConstraint.m */,
+				DF6C229B1F00EAD9003250E5 /* MASConstraint+Private.h */,
+				DF6C229C1F00EAD9003250E5 /* MASConstraint.h */,
+				DF6C229D1F00EAD9003250E5 /* MASConstraint.m */,
+				DF6C229E1F00EAD9003250E5 /* MASConstraintMaker.h */,
+				DF6C229F1F00EAD9003250E5 /* MASConstraintMaker.m */,
+				DF6C22A01F00EAD9003250E5 /* MASLayoutConstraint.h */,
+				DF6C22A11F00EAD9003250E5 /* MASLayoutConstraint.m */,
+				DF6C22A21F00EAD9003250E5 /* Masonry.h */,
+				DF6C22A31F00EAD9003250E5 /* MASUtilities.h */,
+				DF6C22A41F00EAD9003250E5 /* MASViewAttribute.h */,
+				DF6C22A51F00EAD9003250E5 /* MASViewAttribute.m */,
+				DF6C22A61F00EAD9003250E5 /* MASViewConstraint.h */,
+				DF6C22A71F00EAD9003250E5 /* MASViewConstraint.m */,
+				DF6C22A81F00EAD9003250E5 /* NSArray+MASAdditions.h */,
+				DF6C22A91F00EAD9003250E5 /* NSArray+MASAdditions.m */,
+				DF6C22AA1F00EAD9003250E5 /* NSArray+MASShorthandAdditions.h */,
+				DF6C22AB1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				DF6C22AC1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				DF6C22AD1F00EAD9003250E5 /* View+MASAdditions.h */,
+				DF6C22AE1F00EAD9003250E5 /* View+MASAdditions.m */,
+				DF6C22AF1F00EAD9003250E5 /* View+MASShorthandAdditions.h */,
+				DF6C22B01F00EAD9003250E5 /* ViewController+MASAdditions.h */,
+				DF6C22B11F00EAD9003250E5 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		DF6C22B21F00EAD9003250E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22B31F00EAD9003250E5 /* NEPVideoAgainView.h */,
+				DF6C22B41F00EAD9003250E5 /* NEPVideoAgainView.m */,
+				DF6C22F91F00F9B0003250E5 /* NEPVideoProgreeTip.h */,
+				DF6C22FA1F00F9B0003250E5 /* NEPVideoProgreeTip.m */,
+				DF6C23001F00FE39003250E5 /* NEPVideoBrightnessView.h */,
+				DF6C23011F00FE39003250E5 /* NEPVideoBrightnessView.m */,
+				DF6C22B51F00EAD9003250E5 /* NEPVideoBottomBar.h */,
+				DF6C22B61F00EAD9003250E5 /* NEPVideoBottomBar.m */,
+				DF6C22B91F00EAD9003250E5 /* NEPVideoTopBar.h */,
+				DF6C22BA1F00EAD9003250E5 /* NEPVideoTopBar.m */,
+				DF6C22B71F00EAD9003250E5 /* NEPVideoTool.h */,
+				DF6C22B81F00EAD9003250E5 /* NEPVideoTool.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF6C22D41F00ED78003250E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C22F71F00EE04003250E5 /* UIKit.framework */,
+				DF6C22F51F00EDFF003250E5 /* AudioToolbox.framework */,
+				DF6C22F31F00EDF9003250E5 /* VideoToolbox.framework */,
+				DF6C22F11F00EDF1003250E5 /* CoreVideo.framework */,
+				DF6C22EF1F00EDE7003250E5 /* AVFoundation.framework */,
+				DF6C22ED1F00EDDF003250E5 /* CoreMedia.framework */,
+				DF6C22EB1F00EDD5003250E5 /* CoreGraphics.framework */,
+				DF6C22E91F00EDCE003250E5 /* CoreAudio.framework */,
+				DF6C22E71F00EDC6003250E5 /* QuartzCore.framework */,
+				DF6C22E51F00EDBD003250E5 /* OpenGLES.framework */,
+				DF6C22E31F00EDB5003250E5 /* Foundation.framework */,
+				DF6C22E11F00EDAD003250E5 /* CFNetwork.framework */,
+				DF6C22DF1F00EDA5003250E5 /* CoreTelephony.framework */,
+				DF6C22DD1F00ED9C003250E5 /* SystemConfiguration.framework */,
+				DF6C22DB1F00ED96003250E5 /* libiconv.tbd */,
+				DF6C22D91F00ED8D003250E5 /* libstdc++.tbd */,
+				DF6C22D71F00ED80003250E5 /* libz.tbd */,
+				DF6C22D51F00ED78003250E5 /* libbz2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFFD37851EEA8F80000EEA14 = {
+			isa = PBXGroup;
+			children = (
+				DFFD37901EEA8F80000EEA14 /* NETPlayerView */,
+				DFFD37AA1EEA8F80000EEA14 /* NETPlayerViewTests */,
+				DFFD37B51EEA8F80000EEA14 /* NETPlayerViewUITests */,
+				DFFD378F1EEA8F80000EEA14 /* Products */,
+				DF6C22D41F00ED78003250E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFD378F1EEA8F80000EEA14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD378E1EEA8F80000EEA14 /* NETPlayerView.app */,
+				DFFD37A71EEA8F80000EEA14 /* NETPlayerViewTests.xctest */,
+				DFFD37B21EEA8F80000EEA14 /* NETPlayerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFD37901EEA8F80000EEA14 /* NETPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD37941EEA8F80000EEA14 /* AppDelegate.h */,
+				DFFD37951EEA8F80000EEA14 /* AppDelegate.m */,
+				DFFD37971EEA8F80000EEA14 /* ViewController.h */,
+				DFFD37981EEA8F80000EEA14 /* ViewController.m */,
+				DF6C22771F00EAD9003250E5 /* NEPWQDLPlayView */,
+				DFFD379A1EEA8F80000EEA14 /* Main.storyboard */,
+				DFFD379D1EEA8F80000EEA14 /* Assets.xcassets */,
+				DFFD379F1EEA8F80000EEA14 /* LaunchScreen.storyboard */,
+				DFFD37A21EEA8F80000EEA14 /* Info.plist */,
+				DFFD37911EEA8F80000EEA14 /* Supporting Files */,
+			);
+			path = NETPlayerView;
+			sourceTree = "<group>";
+		};
+		DFFD37911EEA8F80000EEA14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD37921EEA8F80000EEA14 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFFD37AA1EEA8F80000EEA14 /* NETPlayerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD37AB1EEA8F80000EEA14 /* NETPlayerViewTests.m */,
+				DFFD37AD1EEA8F80000EEA14 /* Info.plist */,
+			);
+			path = NETPlayerViewTests;
+			sourceTree = "<group>";
+		};
+		DFFD37B51EEA8F80000EEA14 /* NETPlayerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD37B61EEA8F80000EEA14 /* NETPlayerViewUITests.m */,
+				DFFD37B81EEA8F80000EEA14 /* Info.plist */,
+			);
+			path = NETPlayerViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFFD378D1EEA8F80000EEA14 /* NETPlayerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFD37BB1EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerView" */;
+			buildPhases = (
+				DFFD378A1EEA8F80000EEA14 /* Sources */,
+				DFFD378B1EEA8F80000EEA14 /* Frameworks */,
+				DFFD378C1EEA8F80000EEA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NETPlayerView;
+			productName = NETPlayerView;
+			productReference = DFFD378E1EEA8F80000EEA14 /* NETPlayerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFFD37A61EEA8F80000EEA14 /* NETPlayerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFD37BE1EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerViewTests" */;
+			buildPhases = (
+				DFFD37A31EEA8F80000EEA14 /* Sources */,
+				DFFD37A41EEA8F80000EEA14 /* Frameworks */,
+				DFFD37A51EEA8F80000EEA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFD37A91EEA8F80000EEA14 /* PBXTargetDependency */,
+			);
+			name = NETPlayerViewTests;
+			productName = NETPlayerViewTests;
+			productReference = DFFD37A71EEA8F80000EEA14 /* NETPlayerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFFD37B11EEA8F80000EEA14 /* NETPlayerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFD37C11EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerViewUITests" */;
+			buildPhases = (
+				DFFD37AE1EEA8F80000EEA14 /* Sources */,
+				DFFD37AF1EEA8F80000EEA14 /* Frameworks */,
+				DFFD37B01EEA8F80000EEA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFD37B41EEA8F80000EEA14 /* PBXTargetDependency */,
+			);
+			name = NETPlayerViewUITests;
+			productName = NETPlayerViewUITests;
+			productReference = DFFD37B21EEA8F80000EEA14 /* NETPlayerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFD37861EEA8F80000EEA14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NEPVideo;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = heqiao;
+				TargetAttributes = {
+					DFFD378D1EEA8F80000EEA14 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P5JD7V2J5U;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					DFFD37A61EEA8F80000EEA14 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFFD378D1EEA8F80000EEA14;
+					};
+					DFFD37B11EEA8F80000EEA14 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFFD378D1EEA8F80000EEA14;
+					};
+				};
+			};
+			buildConfigurationList = DFFD37891EEA8F80000EEA14 /* Build configuration list for PBXProject "NETPlayerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFFD37851EEA8F80000EEA14;
+			productRefGroup = DFFD378F1EEA8F80000EEA14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFD378D1EEA8F80000EEA14 /* NETPlayerView */,
+				DFFD37A61EEA8F80000EEA14 /* NETPlayerViewTests */,
+				DFFD37B11EEA8F80000EEA14 /* NETPlayerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFD378C1EEA8F80000EEA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6C22FF1F00FB2D003250E5 /* NEPVideoPlayer.bundle in Resources */,
+				DFFD37A11EEA8F80000EEA14 /* LaunchScreen.storyboard in Resources */,
+				DFFD379E1EEA8F80000EEA14 /* Assets.xcassets in Resources */,
+				DFFD379C1EEA8F80000EEA14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37A51EEA8F80000EEA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37B01EEA8F80000EEA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFD378A1EEA8F80000EEA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6C22BC1F00EAD9003250E5 /* NEPVideoLiveView+Observer.m in Sources */,
+				DFFD37991EEA8F80000EEA14 /* ViewController.m in Sources */,
+				DF6C23021F00FE39003250E5 /* NEPVideoBrightnessView.m in Sources */,
+				DF6C22BD1F00EAD9003250E5 /* NEPVideoShortView+Event.m in Sources */,
+				DF6C22BB1F00EAD9003250E5 /* NEPVideoLiveView+Event.m in Sources */,
+				DF6C23231F024970003250E5 /* NEPVideoPlayerModel.m in Sources */,
+				DF6C22C61F00EAD9003250E5 /* MASCompositeConstraint.m in Sources */,
+				DF6C22BF1F00EAD9003250E5 /* NEPVideoSessionManager.m in Sources */,
+				DFFECF631F0DD954009B6D0D /* ViewController+NEPVideoSwizzling.m in Sources */,
+				DF6C22CB1F00EAD9003250E5 /* MASViewConstraint.m in Sources */,
+				DF14C2381F04F9460055F239 /* NEPVideoPlayerViewController.m in Sources */,
+				DF6C22CE1F00EAD9003250E5 /* View+MASAdditions.m in Sources */,
+				DF6C22D21F00EAD9003250E5 /* NEPVideoTool.m in Sources */,
+				DF6C22CD1F00EAD9003250E5 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				DF6C22C91F00EAD9003250E5 /* MASLayoutConstraint.m in Sources */,
+				DF6C22CF1F00EAD9003250E5 /* ViewController+MASAdditions.m in Sources */,
+				DF6C22C81F00EAD9003250E5 /* MASConstraintMaker.m in Sources */,
+				DF6C22D11F00EAD9003250E5 /* NEPVideoBottomBar.m in Sources */,
+				DF6C22D31F00EAD9003250E5 /* NEPVideoTopBar.m in Sources */,
+				DF6C22D01F00EAD9003250E5 /* NEPVideoAgainView.m in Sources */,
+				DF6C22BE1F00EAD9003250E5 /* NEPVideoShortView+Observer.m in Sources */,
+				DFFD37961EEA8F80000EEA14 /* AppDelegate.m in Sources */,
+				DFFD37931EEA8F80000EEA14 /* main.m in Sources */,
+				DF6C22FB1F00F9B0003250E5 /* NEPVideoProgreeTip.m in Sources */,
+				DF6C22C21F00EAD9003250E5 /* NEPVideoShortView.m in Sources */,
+				DF6C22CC1F00EAD9003250E5 /* NSArray+MASAdditions.m in Sources */,
+				DF6C22CA1F00EAD9003250E5 /* MASViewAttribute.m in Sources */,
+				DF6C22C01F00EAD9003250E5 /* NEPVideoLiveView.m in Sources */,
+				DF6C22C71F00EAD9003250E5 /* MASConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37A31EEA8F80000EEA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD37AC1EEA8F80000EEA14 /* NETPlayerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD37AE1EEA8F80000EEA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD37B71EEA8F80000EEA14 /* NETPlayerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFFD37A91EEA8F80000EEA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFD378D1EEA8F80000EEA14 /* NETPlayerView */;
+			targetProxy = DFFD37A81EEA8F80000EEA14 /* PBXContainerItemProxy */;
+		};
+		DFFD37B41EEA8F80000EEA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFD378D1EEA8F80000EEA14 /* NETPlayerView */;
+			targetProxy = DFFD37B31EEA8F80000EEA14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFFD379A1EEA8F80000EEA14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFD379B1EEA8F80000EEA14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFFD379F1EEA8F80000EEA14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFD37A01EEA8F80000EEA14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFFD37B91EEA8F80000EEA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFFD37BA1EEA8F80000EEA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFFD37BC1EEA8F80000EEA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P5JD7V2J5U;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/NEPWQDLPlayView/SDK";
+				GCC_PREFIX_HEADER = NETPlayerView/NEPWQDLPlayView/NEPWQDL.pch;
+				HEADER_SEARCH_PATHS = NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/include;
+				INFOPLIST_FILE = NETPlayerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/lib",
+					"$(PROJECT_DIR)/NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NETPlayerView/NEPWQDLPlayView/View/NETPlayerView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DFFD37BD1EEA8F80000EEA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P5JD7V2J5U;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/NEPWQDLPlayView/SDK";
+				GCC_PREFIX_HEADER = NETPlayerView/NEPWQDLPlayView/NEPWQDL.pch;
+				HEADER_SEARCH_PATHS = NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/include;
+				INFOPLIST_FILE = NETPlayerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/lib",
+					"$(PROJECT_DIR)/NETPlayerView/NEPWQDLPlayView/SDK/LivePlayerSDK/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NETPlayerView/NEPWQDLPlayView/View/NETPlayerView-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DFFD37BF1EEA8F80000EEA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NETPlayerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NETPlayerView.app/NETPlayerView";
+			};
+			name = Debug;
+		};
+		DFFD37C01EEA8F80000EEA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NETPlayerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NETPlayerView.app/NETPlayerView";
+			};
+			name = Release;
+		};
+		DFFD37C21EEA8F80000EEA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NETPlayerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NETPlayerView;
+			};
+			name = Debug;
+		};
+		DFFD37C31EEA8F80000EEA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NETPlayerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = heqiao.NETPlayerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NETPlayerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFD37891EEA8F80000EEA14 /* Build configuration list for PBXProject "NETPlayerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD37B91EEA8F80000EEA14 /* Debug */,
+				DFFD37BA1EEA8F80000EEA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFD37BB1EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD37BC1EEA8F80000EEA14 /* Debug */,
+				DFFD37BD1EEA8F80000EEA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFD37BE1EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD37BF1EEA8F80000EEA14 /* Debug */,
+				DFFD37C01EEA8F80000EEA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFD37C11EEA8F80000EEA14 /* Build configuration list for PBXNativeTarget "NETPlayerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD37C21EEA8F80000EEA14 /* Debug */,
+				DFFD37C31EEA8F80000EEA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFD37861EEA8F80000EEA14 /* Project object */;
+}
